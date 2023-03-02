@@ -1,0 +1,35 @@
+fieldset {
+  background-color: #e8ffd5;
+  text-align: center;
+  width: 300px;
+  margin: 5px auto;
+}
+
+.form-header {
+  margin: 10px auto;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid #666363;
+  padding-top: 7px;
+  border-radius: 5px;
+}
+
+.reset {
+  display: inline;
+}
+
+.submit {
+  display: inline;
+}
+
+button {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #e8ffd5;
+  border-radius: 5px;
+}
+
+.botton-item {
+  text-align: center;
+}

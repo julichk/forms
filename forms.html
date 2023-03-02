@@ -4,58 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/forms.css" />
     <title>Forms</title>
   </head>
   <body>
-    <div class="form_header">
-      <h1>Реєстрація користувача</h1>
+    <div class="form">
+      <form
+        method="post"
+        action="#"
+        enctype="multipart/form-data"
+        target="_blank"
+        id="form"
+      >
+        <legend class="form-header">Реєстрація користувача</legend>
+        <fieldset>
+          <div>
+            <p>Повне імʼя</p>
+            <input type="text" id="your-name" name="your-name" value="" />
+          </div>
+
+          <div>
+            <p>Пошта</p>
+            <input type="email" id="mail" name="mail" value="" />
+          </div>
+
+          <div>
+            <p>Пароль</p>
+            <input type="password" id="pwd" name="pwd" />
+          </div>
+
+          <div>
+            <p>Пароль ще раз</p>
+            <input type="password" id="pwd" name="pwd" />
+          </div>
+
+          <div>
+            <p>Стать</p>
+            <div>
+              <input type="radio" id="male" name="sex" value="male" />Чоловік
+            </div>
+            <div>
+              <input type="radio" id="female" name="sex" value="female" />Жінка
+            </div>
+          </div>
+
+          <div>
+            <p>Вік</p>
+            <input type="text" id="age" name="age" />
+          </div>
+
+          <div>
+            <p>Курс</p>
+            <select id="coures" name="coures">
+              <option value="front-end">Front-End</option>
+              <option value="back-end">Back-End</option>
+              <option value="project-manegement">Project Management</option>
+              <option value="qa-manual">QA Manual</option>
+            </select>
+          </div>
+
+          <div>
+            <p>Адреса проживання</p>
+            <textarea
+              name="addres"
+              placeholder="Країна, регіон, місто/селище, вулиця"
+            ></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" id="agree" name="agree" />
+            Я погоджуюсь з обробкою персональних даних
+          </div>
+        </fieldset>
+      </form>
     </div>
-    <form method="get" action="" target="_blank" id="form">
-      <fieldset>
-        <label for="your-name">Повне імʼя:</label>
-        <input type="text" id="your-name" name="your-name" value="" />
-        <br />
-        <label for="mail">Пошта:</label>
-        <input type="email" id="mail" name="mail" value="" />
-        <br />
-        <label for="pwd">Пароль:</label>
-        <input type="password" id="pwd" name="pwd" />
-        <br />
-        <label for="pwd">Пароль ще раз:</label>
-        <input type="password" id="pwd" name="pwd" />
-        <br />
-        <p>Стать</p>
-        <input type="radio" id="male" name="sex" value="male" />
-        <label for="male">Чоловік</label>
-        <input type="radio" id="female" name="sex" value="female" />
-        <label for="female">Жінка</label>
-        <br />
-        <label for="age">Вік</label>
-        <input type="text" id="age" name="age" />
-        <br />
-        <label for="coures">Курс</label>
-        <select id="coures" name="coures">
-          <option value="front-end">Front-End</option>
-          <option value="back-end">Back-End</option>
-          <option value="project-manegement">Project Management</option>
-          <option value="qa-manual">QA Manual</option>
-        </select>
-        <br />
-        <label for="addres">Адреса проживання</label>
-        <textarea
-          id="addres"
-          name="addres"
-          cols="20"
-          rows="3"
-          placeholder="Країна, регіон, місто/селище, вулиця"
-        ></textarea>
-        <br />
-        <input type="checkbox" id="agree" name="agree" />
-        <label for="agree">Я погоджуюсь з обробкою персональних даних </label>
-      </fieldset>
-    </form>
-    <button type="reset" form="form" value="reset">Очистити форму</button>
-    <button type="submit" form="form" value="submit">Зареєструватися</button>
+
+    <div class="botton-item">
+      <div class="reset">
+        <button type="reset" form="form" value="reset">Очистити форму</button>
+      </div>
+      <div class="submit">
+        <button type="submit" form="form" value="submit">
+          Зареєструватися
+        </button>
+      </div>
+    </div>
   </body>
 </html>
